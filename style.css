@@ -173,16 +173,17 @@ nav ul li a:hover::after{
     margin-right: 50px;
     font-size: 20px;
     font-weight: 500;
-    color: #ffba39;
+    color: #5feef8;
     cursor: pointer;
     position: relative;
 }
+
 .tab-links::after{
     content: '';
     width: 0;
-    height: 3px;
-    background: #09ff01;
-    position: absolute;
+    height: 2px;
+    background: #e7e987;
+    position:absolute;
     left: 0;
     bottom: -8px;
     transform: 0.5s;
