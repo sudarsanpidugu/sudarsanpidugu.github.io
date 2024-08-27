@@ -147,6 +147,7 @@ nav ul li a:hover::after{
     font-style: italic;
     font-family: cursive;
     color: #e0ff31;
+    padding: unset !important;
 
 }
 
@@ -454,7 +455,7 @@ nav .fas{
         background-image: url(images/phone-background.png);
     }
     .header-text{
-        margin-top: 125%;
+        margin-top: 140%;
         font-size: 16px;
     }
     .header-text .subheading{
@@ -570,11 +571,12 @@ nav .fas{
         transition: transform 0.5s;
     }
     .scrollFunction{
-        margin-top: 8px;
+        margin-top: 25px !important;
         font-size: 12px;
         font-style: italic;
         font-family: cursive;
         color: #e0ff31;
+        
     }
     
 }
