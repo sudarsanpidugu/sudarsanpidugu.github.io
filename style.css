@@ -138,10 +138,19 @@ nav ul li a:hover::after{
 .btn.bnt5:hover{
     background-image: linear-gradient(to right, blue, orange) !important;
 }
+/* ----------------scrooling------------------------------- */
+.scrollFunction{
+    margin-top: 190px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: cursive;
+    color: #e0ff31;
+
+}
 
 /* ------------------------about------------------------ */
 #about{
-    padding: 80px 0;
+    padding: 120px 0;
     color: #ababab;
 }
 .row{
