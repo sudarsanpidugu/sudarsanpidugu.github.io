@@ -468,8 +468,8 @@ nav .fas{
         font-weight: 700;
     }
     .IT{
-        margin-top: 20px;
-        margin-bottom: 15px;
+        margin-top: 18px;
+        margin-bottom: 11px;
     }
     .btn.btn3{
         margin: 0px;
@@ -568,12 +568,11 @@ nav .fas{
         transition: transform 0.5s;
     }
     .scrollFunction{
-        margin-top: 190px;
-        font-size: 18px;
+        margin-top: 8px;
+        font-size: 12px;
         font-style: italic;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: cursive;
         color: #e0ff31;
-    
     }
     
 }
