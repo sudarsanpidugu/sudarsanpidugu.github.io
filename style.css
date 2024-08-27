@@ -443,18 +443,57 @@ nav .fas{
         background-image: url(images/phone-background.png);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 125%;
         font-size: 16px;
+    }
+    .header-text .subheading{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .header-text h1 span{
+        font-weight: 800;
+        font-size: 30px;
+    }
+    #typing-animation{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .IT{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .btn.btn3{
+        margin: 0px;
+        font-weight: 200;
+        font-size: 10px;
+        cursor: pointer;
+        display: inline-block;
+        background: #ffbd39;
+        border-radius: 50px;
+        border: 1px solid #ffbd39;
+        color: #080800;
+        padding: 10px 10px;
+    }
+    .btn.btn4{
+        margin: 0;
+        font-size: 10px;
+        cursor: pointer;
+        display: inline-block;
+        background: transparent;
+        border-radius: 50px;
+        border: 1px solid rgb(237, 241, 168);
+        padding: 10px 14px;    
     }
     .header-text h1{
         font-size: 30px;
     }
+    
     nav .fas{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #88d3f7;
         position: fixed;
         top: 0;
         right: -200px;
@@ -494,8 +533,32 @@ nav .fas{
         flex-basis: 100%;
     }
     .copyright{
-        font-size: 14px;
+        padding: 13px;
+        font-size: 12px;
     }
+    .btn.btn5{
+        display: none;
+    }
+
+    .social-icons{
+        cursor: pointer;
+        position: bottom;
+        right: 5px;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column !important;
+    }
+    .social-icons a{
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 20px;
+        margin-bottom: 8px;
+        margin-right: 5px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    
 }
 #msg{
     color: #61b752;
