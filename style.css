@@ -5,6 +5,7 @@
     box-sizing: border-box;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
+
 }
 html{
     scroll-behavior: smooth;
@@ -451,6 +452,10 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px) {
+    *{
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
     #header{
         background-image: url(images/phone-background.png);
     }
