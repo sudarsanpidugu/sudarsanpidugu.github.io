@@ -444,7 +444,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     
     #header{
         background-image: url(images/phone-background.png);
