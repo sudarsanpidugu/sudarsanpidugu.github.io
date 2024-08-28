@@ -445,10 +445,7 @@ nav .fas{
 }
 
 @media only screen and (max-width: 700px) {
-    /* *{
-        overflow-x: hidden !important;
-        overflow-y: auto !important;
-    } */
+    
     #header{
         background-image: url(images/phone-background.png);
     }
