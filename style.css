@@ -444,7 +444,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     /* *{
         overflow-x: hidden !important;
         overflow-y: auto !important;
@@ -453,7 +453,7 @@ nav .fas{
         background-image: url(images/phone-background.png);
     }
     .header-text{
-        margin-top: 140%;
+        margin-top: 120%;
         font-size: 16px;
     }
     .header-text .subheading{
