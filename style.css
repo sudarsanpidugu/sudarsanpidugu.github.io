@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-
 }
 html{
     scroll-behavior: smooth;
@@ -20,6 +19,7 @@ body{
     background-size: cover;
     background-position: center;
 } 
+
 .container{
     padding: 10px 5%;
 }
@@ -68,7 +68,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 25%;
 }
 .header-text .subheading{
     color: #080800;
@@ -137,7 +137,7 @@ nav ul li a:hover::after{
 }
 /* ----------------scrooling------------------------------- */
 .scrollFunction{
-    margin-top: 145px;
+    margin-top: 70px;
     font-size: 18px;
     font-family: cursive;
     color: #e0ff31;
@@ -164,10 +164,6 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
-.about-col-2 p{
-    text-align: left;
-    padding: 10px;
-}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -185,13 +181,12 @@ nav ul li a:hover::after{
     cursor: pointer;
     position: relative;
 }
-
 .tab-links::after{
     content: '';
     width: 0;
     height: 2px;
     background: #e7e987;
-    position:absolute;
+    position: absolute;
     left: 0;
     bottom: -8px;
     transform: 0.5s;
@@ -245,7 +240,7 @@ nav ul li a:hover::after{
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 5px 90px;
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div i{
@@ -364,22 +359,52 @@ nav ul li a:hover::after{
     
 }
 
+/* -------------------------------------------------- */
+form{
+    margin-top: 50px;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px; }
+    
+.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 25% 25%;
+    max-width: 20%; }
+
+.no-gutters {
+margin-right: 0;
+margin-left: 0; }
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+padding-right: 0;
+padding-left: 0; }
+
+.dbox .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2553b8;
+    margin: 0 auto;
+    margin-bottom: 0px; }
+
+.dbox .icon span {
+    font-size: 20px;
+    padding: 21px 21px;
+    color: #fff; }
+
+.dbox .text {
+width: 100%; }
 
 /* -----------------------contact----------------- */
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 35%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
+
 .social-icons{
     position: fixed;
     right: 10px;
@@ -402,8 +427,8 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
     display: inline-block;
+    margin-bottom: 20%;
     background: #ff004f;
-    
 }
 .btn.btn2:hover{
     background-color: #31363d;
@@ -422,12 +447,7 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 8px;
 }
-form btn2{
-    padding: 14px 40px;
-    font-size: 18px;
-    margin-top: 100px;
-    cursor: pointer;
-}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -439,13 +459,15 @@ form btn2{
 .copyright i{
     color: #ff004f;
 }
+.resume{
+    color: #faa200;
+}
 /* -----------------css for small screen------------ */
 nav .fas{
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    
     #header{
         background-image: url(images/phone-background.png);
     }
@@ -494,7 +516,6 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
-    
     nav .fas{
         display: block;
         font-size: 25px;
@@ -573,7 +594,6 @@ nav .fas{
         color: #e0ff31;
         
     }
-    
 }
 #msg{
     color: #61b752;

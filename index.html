@@ -8,9 +8,8 @@
     <title>Sudarsan Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/53d91d255c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -22,8 +21,10 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="images/my-cv.pdf" class="resume"><b>Resume</b></a></li>
+                    
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -39,6 +40,7 @@
                 <a href="https://www.youtube.com/@SoftwarePlanet-cg3qd" class="btn btn3">Youtube</a>
                 <a href="https://github.com/sudarsanpidugu/Django-projects.git" class="btn btn4 ">Works</a>
             </p>
+
         </div>
         <marquee class="scrollFunction"> Welcome to our website! My Name is Sudarsan I am a Linux System
             Administrator & Full Stack Developer. I have overall 5+ years of experience with different Environments
@@ -46,17 +48,15 @@
                 UI(CSS,HTML,Bootstrap,Javascript),MySQL</b> Python is Backend, Django is a web Framwork, UI
             technologies is use to build the web application colors actioons and MySQL is a database. etc... Thanks
             for supporting <b><i class="fa-solid fa-envelope"></i> Email: sudarsan2165@gmail.com</b> </marquee>
-    
-        </div>
-    
 
+    </div>
 
 
 
     <!-- -------------------about-------------------- -->
 
-    <div id="about" >
-        <div class="container" data-aos="zoom-in" data-aos-delay="300">
+    <div id="about">
+        <div class="container">
             <div class="row">
                 <div class="about-col-1">
                     <img src="images/user.png" alt="">
@@ -111,11 +111,12 @@
     </div>
     <!-- ---------------------services----------------------- -->
     <div id="services">
-        <div class="container" data-aos="flip-down" data-aos-delay="300">
+        <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-laptop"></i>
+
                     <h2>Web Design</h2>
                     <p>Web design encompasses many different skills and disciplines in the production and maintenance of
                         websites. The different areas of web design include web graphic design;
@@ -169,10 +170,11 @@
             </div>
         </div>
     </div>
-    <!-- -------------------portfolio--------------------- -->
+
+    <!-- ------------------------------portfolio-------------------------------- -->
     <div id="portfolio">
         <div class="container" data-aos="fade-down" data-aos-delay="300">
-            <h1 class="sub-title">My Portfolios</h1>
+            <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/work-1.jpg">
@@ -215,9 +217,7 @@
                         <h3>Python Beginer</h3>
                         <p>The Smart mail passing the massage to
                             one persion to other persion in this process we use Python Technologie </p>
-                        <a
-                            href="images/LINUX NOTE.rtf"><i
-                                class="fas fa-external-link-alt"></i></a>
+                        <a href="images/LINUX NOTE.rtf"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -226,9 +226,7 @@
                         <h3>Chat Bot</h3>
                         <p>The Chat Bot passing the massage to
                             one persion to other persion in this process we use Python Technologie </p>
-                        <a
-                            href="work-list"><i
-                                class="fas fa-external-link-alt"></i></a>
+                        <a href="work-list"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -248,29 +246,87 @@
 
     </div>
     <!-- ---------------------contact------------------------- -->
+
     <div id="contact">
-        <div class="container" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>sudarsan2165@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+91 8464002165</p>
+                    <!-- <p><i class="fas fa-paper-plane"></i>sudarsan2165@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 8464002165</p> -->
                     <div class="social-icons">
                         <a href="https://facebook.com/in/sudarsan-pidugu-311b92283"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://instagram.com/smart_sudarsan/"><i class="fab fa-instagram"></i></a>
                         <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
                     <form name="submit-to-google-sheet">
+                        <label class="label" for="name">Full Name</label>
                         <input type="text" name="Name" placeholder="Your Name" required>
+                        <label class="label" for="email">Email Address</label>
                         <input type="email" name="Email" placeholder="Your Email" required>
+                        <label class="label" for="#">Message</label>
                         <textarea name="Message" row="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
+                </div>
+                <div class="contact-right">
+                    <map name="location"></map>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Address:</span> Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-phone"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Phone:</span> <a href="tel://1234567920">+91 8464002165</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa-solid fa-envelope"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Email:</span> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">sudarsan2165@gmile.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-globe"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Website:</span> <a href="httos://sudarsanpidugu.github.io">sudarsanpidugu.github.io</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa-brands fa-youtube"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Youtube:</span> <a href="https://www.youtube.com/@SoftwarePlanet-cg3qd">@SoftwarePlanet-cg3qd</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,6 +339,8 @@
         </div>
     </div>
     <!-- -----------------------------------scripts------------------------------- -->
+
+
 
     <script>
         // Initialize the typing animation
@@ -349,7 +407,7 @@
 
 
     </script>
-    <!-- ---------------------- contact form-------------------- -->
+    <!-- ---------------------- contact form script-------------------- -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzRxfWG5jKoAPK1WdFDjz_SXjwFNad0-Csaq24yCjqftHXsdKQYdqxhoIpamaAsjYZh/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -389,12 +447,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init();
     </script>
 
 </body>
