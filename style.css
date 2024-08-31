@@ -388,8 +388,11 @@ iframe{
 }
 
 /* ---------------------Icons----------------- */
-
-.dbox .icon {
+.information{
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -397,7 +400,7 @@ iframe{
     margin: 0 auto;
     margin-bottom: 10px; }
 
-.dbox .icon span {
+.icon i {
     font-size: 20px;
     padding: 21px 21px;
     color: #fff; 
@@ -546,15 +549,35 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-    }
+    
     .copyright{
         padding: 13px;
         font-size: 12px;
     }
     .btn.btn5{
         display: none;
+    }
+    .information{
+        display:block;
+        justify-content:center ;
+    }
+    .information p{
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #2553b8;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+    
+    .icon i {
+        font-size: 20px;
+        padding: 10px 12px;
+        color: #fff; 
     }
 
     .social-icons{
