@@ -359,33 +359,35 @@ nav ul li a:hover::after{
     
 }
 
-/* -------------------------------------------------- */
-form{
-    margin-top: 50px;
+/* ---------------------contact----------------- */
+#contact{
+    padding: 0;
 }
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 15px;
-    margin-left: 15px; }
-    
-.col-md-3 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 25% 25%;
-    max-width: 20%; }
 
-.no-gutters {
-margin-right: 0;
-margin-left: 0; }
+form{
+    margin: 50px 80px;
+    max-width: 50%;
+}
 
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-padding-right: 0;
-padding-left: 0; }
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 12px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+iframe{
+    width: 200;
+    height: 200;
+
+}
+
+/* ---------------------Icons----------------- */
 
 .dbox .icon {
     width: 60px;
@@ -393,17 +395,16 @@ padding-left: 0; }
     border-radius: 50%;
     background: #2553b8;
     margin: 0 auto;
-    margin-bottom: 0px; }
+    margin-bottom: 10px; }
 
 .dbox .icon span {
     font-size: 20px;
     padding: 21px 21px;
-    color: #fff; }
-
+    color: #fff; 
+}
 .dbox .text {
-width: 100%; }
-
-/* -----------------------contact----------------- */
+width: 100%; 
+}
 
 .social-icons{
     position: fixed;
@@ -433,20 +434,8 @@ width: 100%; }
 .btn.btn2:hover{
     background-color: #31363d;
 }
-.contact-right from{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 12px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 8px;
-}
+
+/* ------------------copyrigh-------------------------- */
 
 .copyright{
     width: 100%;
