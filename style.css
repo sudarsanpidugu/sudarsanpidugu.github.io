@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #575170;
+    background: #3c4fa0bd;
     font-family: "Poppins", Arial, sans-serif;
     color: #fff;
 }
