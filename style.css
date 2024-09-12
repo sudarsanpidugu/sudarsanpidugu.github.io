@@ -517,7 +517,7 @@ nav .fas{
         display: inline-block;
         background: transparent;
         border-radius: 50px;
-        border: 1px solid rgb(237, 241, 168);
+        border: 1px solid rgb(168, 187, 241);
         padding: 10px 14px;    
     }
     .header-text h1{
@@ -614,12 +614,38 @@ nav .fas{
         transition: transform 0.5s;
     }
     .scrollFunction{
-        margin-top: 25px !important;
+        margin-top: 60px !important;
         font-size: 12px;
         font-style: italic;
         font-family: cursive;
-        color: #31f1ff;
+        color: #69cde4;
         
+    }
+    form{
+        margin: 50px 80px;
+        /* max-width: 50%; */
+    }
+    form label{
+         margin-left: -70px;
+         font-size: 16px;
+    }
+
+    form input, form textarea{
+        width: 300px;
+        border: 0;
+        outline: none;
+        background: #fff;
+        padding: 15px;
+        margin: 12px 0;
+        color: #000;
+        font-size: 18px;
+        border-radius: 8px;
+        margin-left: -70px;
+    }
+    
+    iframe{
+        display: none;
+    
     }
 }
 #msg{
