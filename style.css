@@ -141,7 +141,7 @@ nav ul li a:hover::after{
 }
 /* ----------------scrooling------------------------------- */
 .scrollFunction{
-    margin-top: 70px;
+    margin-top: 65px;
     font-size: 18px;
     font-family: cursive;
     color: #e0ff31;
