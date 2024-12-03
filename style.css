@@ -477,9 +477,18 @@ nav .fas{
 @media only screen and (max-width: 700px) {
     #header{
         background-image: url(images/phone-background.png);
+        
     }
     .header-text{
-        margin-top: 100%;
+        backdrop-filter: blur(3px);
+        border-radius: 10px;
+        box-shadow: 0 0 60px #93bde4;
+        margin-left: -10px;
+        padding: 20px;
+        border: 2px solid transparent;
+        text-shadow: 2px 2px 15px #000000;
+        margin-top: 90%;
+        margin-bottom: -20px;
         font-size: 16px;
     }
     .header-text .subheading{
@@ -488,8 +497,9 @@ nav .fas{
     }
     .header-text h1 span{
         font-weight: 800;
-        font-size: 30px;
+        font-size:30px;
     }
+
     #typing-animation{
         font-size: 20px;
         font-weight: 700;
