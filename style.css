@@ -385,7 +385,7 @@ nav ul li a:hover::after{
 /* ---------------------contact----------------- */
 #contact{
     /* background-image: url(images/background4.jpg); */
-    padding: 0;
+    margin-top: 100px;
 }
 
 form{
