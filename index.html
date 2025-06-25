@@ -13,42 +13,57 @@
 </head>
 
 <body>
+
+    <div class="navbar">
+        <nav class="navbar">
+            <img src="images/logo.png" class="logo" alt="Sudarsan Logo" />
+
+            <!-- Open icon -->
+            <i class="fas fa-bars menu-icon open-icon" onclick="openmenu()"></i>
+
+            <ul id="sidemenu">
+                <div class="close-wrap">
+                    <i class="fas fa-times close-icon" onclick="closemenu()"></i>
+                </div>
+                <li><a href="#header" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <li>
+                    <a href="images/my-cv.pdf" class="resume" target="_blank" rel="noopener"><b>Resume</b></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="images/my-cv.pdf" class="resume"><b>Resume</b></a></li>
+            <div class="section1">
+                <div class="content">
+                    <span class="subheading">Hello!</span>
+                    <h1>
+                        I'm <span>Sudarsan <br />Pidugu</span>
+                    </h1>
+                    <span id="typing-animation"></span>
 
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <span class="subheading">Hello!</span>
-                <h1>I'm <span>Sudarsan <br>Pidugu</span></h1>
-                <span id="typing-animation"></span>
+                    <h2>Web Developer</h2>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://www.youtube.com/@SoftwarePlanet-cg3qd" target="_blank" class="youtube">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <a href="videos.html" class="videos">
+                        <i class="fas fa-video"></i> Course Videos
+                    </a>
+                    <a href="https://github.com/sudarsanpidugu/Django-projects.git" class="work" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
             </div>
-            <br>
-            <h2 class="IT">IT Support Engineer</h2>
-            <p>
-                <!-- <a href="https://www.youtube.com/@SoftwarePlanet-cg3qd" class="btn btn3">Youtube</a> -->
-                <a href="videos.html" class="btn btn3">Course Videos</a>
-                <a href="https://github.com/sudarsanpidugu/Django-projects.git" class="btn btn4 ">Works</a>
-            </p>
 
-        
-        <!-- <marquee class="scrollFunction"> Welcome to our website! My Name is Sudarsan I am a Linux System
-            Administrator & Full Stack Developer. I have overall 5+ years of experience with different Environments
-            different Technologies like <b>Linux Supporting, develope web application by using Python, Django,
-                UI(CSS,HTML,Bootstrap,Javascript),MySQL</b> Python is Backend, Django is a web Framwork, UI
-            technologies is use to build the web application colors actioons and MySQL is a database. etc... Thanks
-            for supporting <b><i class="fa-solid fa-envelope"></i> Email: sudarsan2165@gmail.com</b> </marquee> -->
         </div>
     </div>
 
@@ -56,60 +71,65 @@
 
     <!-- -------------------about-------------------- -->
 
+
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" alt="">
+                    <img src="images/user.png" alt="Profile" />
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Having overall 4+ years of experience. 2+ years of Professional experience as a <span>Linux System
-                     Administrator and Full Stack Developer</span> and Communication Technologies with
-                        establishing and performing activities over the weekends. In VMware Building server, Disk
-                        management, and Troubleshooting.</p>
+                    <p>
+                        Having overall 4+ years of experience. 2+ years as a
+                        <span>Linux System Administrator and Full Stack Developer</span>. Experience in VMware, Disk
+                        management, Troubleshooting, and weekend deployments.
+                    </p>
 
                     <div class="tab-titles">
                         <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
                         <div class="tab-links" onclick="opentab('experience')">Experience</div>
                         <div class="tab-links" onclick="opentab('education')">Education</div>
                     </div>
+
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Operating Systems</span><br>Redhat Linux, Windows</li>
-                            <li><span>Monitoring Tool</span><br>Nagios</li>
-                            <li><span>Ticketing Tool</span><br>Jira</li>
-                            <li><span>Network Services</span><br>NFS,SSH,FTP,SAMBHA</li>
-                            <li><span>Valume Management</span><br>LVM</li>
-                            <li><span>Other Skills</span><br>VMware,AWS, Troubleshooting, Python, Django, UI, MySQL,
-                                GitHub, Devops, Adobe Photoshop, AutoCAD 2D</li>
-                            <li><span>Environment</span><br>VS Code, Putty, Mobaxterm, IDLE, Jupiter Nootbook</li>
+                            <li><span>Operating Systems</span><br />Redhat Linux, Windows</li>
+                            <li><span>Monitoring Tool</span><br />Nagios</li>
+                            <li><span>Ticketing Tool</span><br />Jira</li>
+                            <li><span>Network Services</span><br />NFS, SSH, FTP, SAMBA</li>
+                            <li><span>Volume Management</span><br />LVM</li>
+                            <li><span>Other Skills</span><br />VMware, AWS, Troubleshooting, Python, Django, UI, MySQL,
+                                GitHub, DevOps, Adobe Photoshop, AutoCAD 2D</li>
+                            <li><span>Environment</span><br />VS Code, Putty, Mobaxterm, IDLE, Jupyter Notebook</li>
                         </ul>
                     </div>
+
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <!-- <li><span>2023 - 2024</span><br>Python Devloper at Aaram IT Solution</li> -->
-                            <li><span>2024 -</span><br>Web Designer at VisualpathIT services PVT LTD</li>
-                            <li><span>2023 - 2024</span><br>Software Developer Intern at Aaram IT Solutions</li>
-                            <li><span>2022 - 2023</span><br>DevOps Engineer at MT Data Services India PVT Ltd (SRL Global)</li>
-                            <li><span>2020 - 2021</span><br>Graphic Designer at Apple Gifts Shop</li>
-                            <li><span>2018 - 2019</span><br>System Oprater (AutoCAD, Office 365) at Sangameswara Electricals</li>
-                            <li><span>2016 - 2017</span><br>AutoCAD Engineer at MKP Planners</li>
+                            <li><span>2024 -</span><br />Web Designer at Visualpath IT Services</li>
+                            <li><span>2023 - 2024</span><br />Software Developer Intern at Aaram IT Solutions</li>
+                            <li><span>2022 - 2023</span><br />DevOps Engineer at MT Data Services (SRL Global)</li>
+                            <li><span>2020 - 2021</span><br />Graphic Designer at Apple Gift Shop</li>
+                            <li><span>2018 - 2019</span><br />System Operator at Sangameswara Electricals</li>
+                            <li><span>2016 - 2017</span><br />AutoCAD Engineer at MKP Planners</li>
                         </ul>
                     </div>
+
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2023</span><br>Python Full Stack Developer Training at Narayana Tech House</li>
-                            <li><span>2021</span><br>Linux System Administrator Training at Sai institute</li>
-                            <li><span>2021</span><br>Degree (Bsc Computers) from Govt degree college for men</li>
-                            <li><span>2016</span><br>Deploma (Civil) from Government Polytechnic College</li>
-                            <li><span>2013</span><br>SSC from SPBVD Sabha High School</li>
+                            <li><span>2023</span><br />Python Full Stack - Narayana Tech House</li>
+                            <li><span>2021</span><br />Linux System Admin - Sai Institute</li>
+                            <li><span>2021</span><br />BSc (Computers) - Govt Degree College for Men</li>
+                            <li><span>2016</span><br />Diploma (Civil) - Govt Polytechnic College</li>
+                            <li><span>2013</span><br />SSC - SPBVD Sabha High School</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- ---------------------services----------------------- -->
     <div id="services">
         <div class="container ser">
@@ -248,103 +268,118 @@
     </div>
     <!-- ---------------------contact------------------------- -->
 
-    <div id="contact">
-        <div class="container con">
-            <h1 class="sub-title">Contact Me</h1>
-            <div class="row">
-                <div class="w-50">
-                    <!-- <p><i class="fas fa-paper-plane"></i>sudarsan2165@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+91 8464002165</p> -->
-                    <div class="social-icons">
-                        <a href="https://facebook.com/in/sudarsan-pidugu-311b92283"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://instagram.com/smart_sudarsan/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/sudarsan-pidugu-311b92283"><i class="fab fa-linkedin"></i></a>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h1 class="section-title animate">Contact Me</h1>
+
+            <div class="contact-wrapper animate">
+
+                <!-- Contact Form -->
+                <div class="contact-form">
                     <form name="submit-to-google-sheet">
-                        <label class="label" for="name">Full Name</label>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <label class="label" for="email">Email</label>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <label class="label" for="#">Message</label>
-                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn3">Submit</button>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="btn btn-submit">Send Message</button>
                     </form>
                     <span id="msg"></span>
                 </div>
-                <div class="w-50">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60903.01231604939!2d78.41213630261676!3d17.43872509763404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c58a97f2b7%3A0x43d9bec594afd293!2sQA%20Planet!5e0!3m2!1sen!2sin!4v1725111280629!5m2!1sen!2sin"></iframe>
+
+                <!-- Contact Info -->
+                <div class="contact-info-grid animate">
+                    <div class="contact-item">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <p><strong>Address:</strong> Hyderabad</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-phone"></i>
+                        <p><strong>Phone:</strong> <a href="tel:+918464002165">+91 8464002165</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <p><strong>Email:</strong> <a href="mailto:sudarsan2165@gmail.com">sudarsan2165@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-globe"></i>
+                        <p><strong>Website:</strong> <a href="https://sudarsanpidugu.github.io"
+                                target="_blank">sudarsanpidugu.github.io</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-youtube"></i>
+                        <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@SoftwarePlanet-cg3qd"
+                                target="_blank">@SoftwarePlanet-cg3qd</a></p>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="information">
-                <div class="col-md-3">
-                    <div>
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <p><span>Address:</span> Hyderabad</p>
-                        </div>
-                    </div>
+            <!-- Map and Social Icons -->
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60903.01231604939!2d78.41213630261676!3d17.43872509763404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c58a97f2b7%3A0x43d9bec594afd293!2sQA%20Planet!5e0!3m2!1sen!2sin!4v1725111280629!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+                <div class="social-icons">
+                    <a href="https://facebook.com/in/sudarsan-pidugu-311b92283" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/smart_sudarsan/" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sudarsan-pidugu-311b92283" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="icon ">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <p><span>Phone:</span> <a href="tel://1234567920">+91 8464002165</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="icon ">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="text">
-                            <p><span>Email:</span> <a
-                                    href="https://mail.google.com/mail/u/0/#inbox?compose=new">sudarsan2165@gmile.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="icon ">
-                            <i class="fa fa-globe"></i>
-                        </div>
-                        <div class="text">
-                            <p><span>Website:</span> <a
-                                    href="httos://sudarsanpidugu.github.io">sudarsanpidugu.github.io</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="icon ">
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                        <div class="text">
-                            <p><span>Youtube:</span> <a
-                                    href="https://www.youtube.com/@SoftwarePlanet-cg3qd">@SoftwarePlanet-cg3qd</a></p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+
         </div>
+    </section>
 
-        <div class="copyright">
-            <p>Copyright © Sudarsan. by <i class="fas fa-heart"></i> by Sudarsan </p>
-            <div class=" btn btn5" onClick="topFunction()">
-                UP
-            </div>
-        </div>
-    </div>
+    <!-- Footer -->
+    <footer class="copyright">
+        <p>&copy; 2025 Sudarsan. Made with <i class="fas fa-heart"></i> by Sudarsan</p>
+        <button class="btn btn-scroll-top" onclick="topFunction()">↑ Top</button>
+    </footer>
 
+
+
+    <script>
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
     <!-- -----------------------------------scripts------------------------------- -->
+
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        const openIcon = document.querySelector(".open-icon");
+
+        function openmenu() {
+            sidemenu.classList.add("active");
+            openIcon.style.display = "none";
+        }
+
+        function closemenu() {
+            sidemenu.classList.remove("active");
+            openIcon.style.display = "block";
+        }
+    </script>
+
+
+
+
     <script>
         // Initialize the typing animation
         const typingAnimationElement = document.getElementById('typing-animation');
@@ -397,19 +432,8 @@
 
     </script>
 
-    <script>
-
-        var sidemenu1 = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu1.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu1.style.display = "none";
-        }
 
 
-    </script>
     <!-- ---------------------- contact form script-------------------- -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzRxfWG5jKoAPK1WdFDjz_SXjwFNad0-Csaq24yCjqftHXsdKQYdqxhoIpamaAsjYZh/exec'
