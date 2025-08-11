@@ -3,40 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudarsan Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/53d91d255c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div class="navbar">
-        <nav class="navbar">
-            <img src="images/logo.png" class="logo" alt="Sudarsan Logo" />
-
-            <!-- Open icon -->
-            <i class="fas fa-bars menu-icon open-icon" onclick="openmenu()"></i>
-
-            <ul id="sidemenu">
-                <div class="close-wrap">
-                    <i class="fas fa-times close-icon" onclick="closemenu()"></i>
-                </div>
-                <li><a href="#header" onclick="closemenu()">Home</a></li>
-                <li><a href="#about" onclick="closemenu()">About</a></li>
-                <li><a href="#services" onclick="closemenu()">Services</a></li>
-                <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
-                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                <li>
-                    <a href="images/my-cv.pdf" class="resume" target="_blank" rel="noopener"><b>Resume</b></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
+    <div id="header-placeholder"></div>
 
     <div id="header">
         <div class="container">
@@ -193,79 +168,73 @@
     </div>
 
     <!-- ------------------------------portfolio-------------------------------- -->
-    <div id="portfolio">
-        <div class="container" data-aos="fade-down" data-aos-delay="300">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.jpg">
-                    <div class="layer">
-                        <h3>Python Beginer</h3>
-                        <p>The Smart mail passing the massage to
-                            one persion to other persion in this process we use Python Technologie </p>
-                        <a
-                            href="https://github.com/sudarsanpidugu/Python-Projects/tree/31cf033eddf93faa79872474e9a316fad37c23db/Mail%20project"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
+    <div id="portfolio" data-aos="fade-down" data-aos-delay="300">
+        <h1 class="sub-title">My Projects</h1>
+
+        <div class="work-list">
+            <a href="https://github.com/sudarsanpidugu/Python-Projects/tree/31cf033eddf93faa79872474e9a316fad37c23db/Mail%20project"
+                class="work" target="_blank" rel="noopener noreferrer">
+                <img src="images/work-1.jpg" alt="Python Beginner Project" />
+                <div class="layer">
+                    <h3>Python Beginner Project</h3>
+                    <p>A smart mail system that transfers messages from one person to another using Python technologies.
+                    </p>
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Chat Bot</h3>
-                        <p>The Chat Bot passing the massage to
-                            one persion to other persion in this process we use Python Technologie </p>
-                        <a
-                            href="https://github.com/sudarsanpidugu/Python-Projects/tree/31cf033eddf93faa79872474e9a316fad37c23db/chat%20box%20project"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
+            </a>
+
+            <a href="https://github.com/sudarsanpidugu/Python-Projects/tree/31cf033eddf93faa79872474e9a316fad37c23db/chat%20box%20project"
+                class="work" target="_blank" rel="noopener noreferrer">
+                <img src="images/work-2.png" alt="Chat Bot Project" />
+                <div class="layer">
+                    <h3>Chat Bot</h3>
+                    <p>A chatbot application that facilitates message passing between users, built with Python.</p>
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Web Appllication</h3>
-                        <p>The Smart mail passing the massage to
-                            one persion to other persion in this process we use Python Technologie </p>
-                        <a
-                            href="https://github.com/sudarsanpidugu/Data-Analytics/blob/f1f980ea45d58e2abd6a3f9cdd59f88e8aaad67c/Data%20Analysis.py"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
+            </a>
+
+            <a href="https://github.com/sudarsanpidugu/Data-Analytics/blob/f1f980ea45d58e2abd6a3f9cdd59f88e8aaad67c/Data%20Analysis.py"
+                class="work" target="_blank" rel="noopener noreferrer">
+                <img src="images/work-3.png" alt="Data Analytics Project" />
+                <div class="layer">
+                    <h3>Data Analytics</h3>
+                    <p>A Python-based data analytics project for processing and visualizing datasets.</p>
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-            </div>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-4.png">
-                    <div class="layer">
-                        <h3>Python Beginer</h3>
-                        <p>The Smart mail passing the massage to
-                            one persion to other persion in this process we use Python Technologie </p>
-                        <a href="images/LINUX NOTE.rtf"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+            </a>
+
+            <a href="images/LINUX NOTE.rtf" class="work" target="_blank" rel="noopener noreferrer">
+                <img src="images/work-4.png" alt="Linux Notes" />
+                <div class="layer">
+                    <h3>Linux Notes</h3>
+                    <p>A collection of notes and commands useful for Linux beginners.</p>
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-5.png">
-                    <div class="layer">
-                        <h3>Chat Bot</h3>
-                        <p>The Chat Bot passing the massage to
-                            one persion to other persion in this process we use Python Technologie </p>
-                        <a href="work-list"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+            </a>
+
+            <a href="work-list" class="work" target="_blank" rel="noopener noreferrer">
+                <img src="images/work-5.png" alt="Chat Bot Project" />
+                <div class="layer">
+                    <h3>Chat Bot</h3>
+                    <p>A chatbot application that facilitates message passing between users, built with Python.</p>
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Web Appllication</h3>
-                        <p>The Smart mail passing the massage to
-                            one persion to other persion in this process we use Python Technologie </p>
-                        <a
-                            href="https://github.com/sudarsanpidugu/Data-Analytics/blob/f1f980ea45d58e2abd6a3f9cdd59f88e8aaad67c/Data%20Analysis.py"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
+            </a>
+
+            <a href="https://github.com/sudarsanpidugu/Data-Analytics/blob/f1f980ea45d58e2abd6a3f9cdd59f88e8aaad67c/Data%20Analysis.py"
+                class="work" target="_blank" rel="noopener noreferrer">
+                <img src="images/work-3.png" alt="Data Analytics Project" />
+                <div class="layer">
+                    <h3>Data Analytics</h3>
+                    <p>A Python-based data analytics project for processing and visualizing datasets.</p>
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-            </div>
-            <a href="#" class="btn">See more</a>
+            </a>
         </div>
 
+        <a href="#" class="btn">See more</a>
     </div>
+
     <!-- ---------------------contact------------------------- -->
 
     <!-- Contact Section -->
@@ -354,128 +323,15 @@
     </footer>
 
 
-
+    <script src="menu.js"></script>
     <script>
-        function topFunction() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
+        fetch("headercomponent.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+                initMenuToggle(); // now attach events after header is loaded
+            });
     </script>
-    <!-- -----------------------------------scripts------------------------------- -->
-
-    <script>
-        const sidemenu = document.getElementById("sidemenu");
-        const openIcon = document.querySelector(".open-icon");
-
-        function openmenu() {
-            sidemenu.classList.add("active");
-            openIcon.style.display = "none";
-        }
-
-        function closemenu() {
-            sidemenu.classList.remove("active");
-            openIcon.style.display = "block";
-        }
-    </script>
-
-
-
-
-    <script>
-        // Initialize the typing animation
-        const typingAnimationElement = document.getElementById('typing-animation');
-
-        // Create an array of typing text
-        const typingTexts = [
-            'Linux System Administrator  ',
-            'Full Stack Devloper  ',
-            'Web Devloper  ',
-            'Adobe Photoshope Designer   ',
-            'Teaching',
-        ];
-
-        // Create a function to display the typing animation for a given text
-        function playTypingAnimation(text) {
-            // Loop through each character and add it to the element
-            for (let i = 0; i < text.length; i++) {
-                setTimeout(() => {
-                    typingAnimationElement.textContent += text[i];
-                }, i * 200); // Increase the delay to slow down the typing animation
-            }
-
-            // Once the animation is complete, reset the text and start over
-            setTimeout(() => {
-                typingAnimationElement.textContent = '';
-                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-            }, text.length * 200);
-        }
-
-        // Start the typing animation loop
-        playTypingAnimation(typingTexts[0]);
-    </script>
-
-
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-
-    </script>
-
-
-
-    <!-- ---------------------- contact form script-------------------- -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRxfWG5jKoAPK1WdFDjz_SXjwFNad0-Csaq24yCjqftHXsdKQYdqxhoIpamaAsjYZh/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 4000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
 
 </body>
 
