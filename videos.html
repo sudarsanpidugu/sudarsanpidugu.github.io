@@ -8,7 +8,7 @@
   <title>Sudarsan Portfolio - Course Videos</title>
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="videos.css">
 
   <!-- Font Awesome -->
@@ -24,7 +24,7 @@
 
 <body>
 
-  <div id="navbar"></div>
+  <div id="header-placeholder"></div>
 
   <div class="container1">
     <div class="main-video">
@@ -56,14 +56,18 @@
 
 
 
-
+  <script src="menu.js"></script>
   <script>
     fetch("headercomponent.html")
       .then(res => res.text())
       .then(data => {
-        document.getElementById("navbar").innerHTML = data;
+        document.getElementById("header-placeholder").innerHTML = data;
+        initMenuToggle();
       });
+  </script>
 
+
+  <script>
     const videos = [
       { id: 'Rfrlv02QQlo', title: 'Python Operators', thumb: 'https://img.youtube.com/vi/Rfrlv02QQlo/mqdefault.jpg' },
       { id: 'sTRJUHZoeUU', title: 'Linux LVM Partition Tutorial', thumb: 'https://img.youtube.com/vi/sTRJUHZoeUU/mqdefault.jpg' },
