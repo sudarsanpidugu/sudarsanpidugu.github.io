@@ -1,0 +1,199 @@
+.projects{
+
+  background:#111827;
+}
+
+/* GRID */
+
+.projects-container{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+  gap:40px;
+}
+
+/* CARD */
+
+.project-card{
+
+  position:relative;
+
+  height:500px;
+
+  border-radius:30px;
+
+  overflow:hidden;
+
+  cursor:pointer;
+
+  transition:0.5s;
+}
+
+/* IMAGE */
+
+.project-card img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:0.7s;
+}
+
+/* OVERLAY */
+
+.project-overlay{
+
+  position:absolute;
+
+  inset:0;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0.3)
+  );
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:35px;
+
+  opacity:0;
+
+  transition:0.5s;
+}
+
+/* HOVER */
+
+.project-card:hover img{
+
+  transform:scale(1.1);
+}
+
+.project-card:hover .project-overlay{
+
+  opacity:1;
+}
+
+/* TEXT */
+
+.project-overlay span{
+
+  color:#06b6d4;
+
+  margin-bottom:15px;
+
+  font-weight:600;
+}
+
+.project-overlay h3{
+
+  font-size:32px;
+
+  margin-bottom:18px;
+}
+
+.project-overlay p{
+
+  color:#cbd5e1;
+
+  line-height:1.8;
+
+  margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.project-overlay a{
+
+  width:55px;
+  height:55px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-decoration:none;
+
+  background:linear-gradient(
+    135deg,
+    #7c3aed,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:20px;
+
+  transition:0.4s;
+}
+
+.project-overlay a:hover{
+
+  transform:rotate(45deg);
+}
+
+/* STATS */
+
+.stats{
+
+  background:#0f172a;
+
+  padding:120px 8%;
+}
+
+.stats-container{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+  gap:30px;
+}
+
+.stat-box{
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  padding:50px 30px;
+
+  border-radius:30px;
+
+  text-align:center;
+
+  backdrop-filter:blur(20px);
+
+  transition:0.5s;
+}
+
+.stat-box:hover{
+
+  transform:translateY(-12px);
+
+  background:linear-gradient(
+    135deg,
+    #7c3aed,
+    #06b6d4
+  );
+}
+
+.stat-box h2{
+
+  font-size:60px;
+
+  margin-bottom:15px;
+}
+
+.stat-box p{
+
+  color:#e2e8f0;
+}

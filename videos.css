@@ -1,3 +1,48 @@
+body{
+  background:#f4f7fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container1{
+  margin-top:80px;
+}
+
+.main-video{
+  background:#fff;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.main-video iframe{
+  border-radius:16px;
+}
+
+.sidebar{
+  background:#fff;
+  border:none;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.sidebar-video{
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.sidebar-video:hover{
+  transform:translateY(-5px) scale(1.02);
+}
+
+.video-actions button{
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+.comment-box{
+  resize:none;
+}
 /* === Base Styles === */
 .container1 {
   display: flex;

@@ -1,0 +1,151 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:white;
+  overflow-x:hidden;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+section{
+  padding:120px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-title h2{
+  font-size:48px;
+  font-weight:800;
+
+  background:linear-gradient(90deg,#7c3aed,#06b6d4);
+
+  -webkit-background-clip:text;
+
+  color:transparent;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills{
+
+  padding:90px 5%;
+
+  background:#111111;
+}
+
+/* TITLE */
+
+.skills .section-heading{
+
+  text-align:center;
+
+  margin-bottom:50px;
+}
+
+/* GRID */
+
+.skills-container{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(260px,1fr));
+
+  gap:20px;
+}
+
+/* CARD */
+
+.skill-card{
+
+  background:#181818;
+
+  border:1px solid #262626;
+
+  border-radius:18px;
+
+  padding:24px;
+
+  transition:0.3s;
+}
+
+.skill-card:hover{
+
+  transform:translateY(-5px);
+
+  border-color:#3ea6ff;
+}
+
+/* TITLE */
+
+.skill-card h3{
+
+  font-size:18px;
+
+  margin-bottom:18px;
+
+  color:white;
+}
+
+/* TAGS */
+
+.skill-tags{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+}
+
+/* TAG */
+
+.skill-tags span{
+
+  background:#272727;
+
+  color:#ddd;
+
+  padding:8px 14px;
+
+  border-radius:30px;
+
+  font-size:12px;
+
+  transition:0.3s;
+}
+
+.skill-tags span:hover{
+
+  background:#3ea6ff;
+
+  color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .skills{
+
+    padding:70px 4%;
+  }
+}
