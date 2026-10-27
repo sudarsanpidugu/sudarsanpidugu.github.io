@@ -2,21 +2,21 @@
 
   position:fixed;
 
-  top:20px;
+  top:10px;
   left:50%;
 
   transform:translateX(-50%);
 
-  width:92%;
+  width:97%;
   height:80px;
 
-  padding:0 30px;
+  padding:0 10px;
 
   background:rgba(15,23,42,0.7);
 
   backdrop-filter:blur(20px);
 
-  border:1px solid rgba(255,255,255,0.08);
+  border:1px solid rgba(255, 255, 255, 0.253);
 
   border-radius:20px;
 
@@ -27,11 +27,25 @@
   z-index:9999;
 }
 
-.logo{
-
-  height:55px;
+.logo {
+  width: 240px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 175px;
+    height: 44px;
+  }
+}
 .nav-links{
 
   display:flex;
